@@ -101,6 +101,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Result">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="resultButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHG-0J-bOg"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8v7-mD-4UY">
                                 <rect key="frame" x="0.0" y="670" width="393" height="182"/>
@@ -145,6 +148,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Initializers Lab" id="dLZ-t2-ZZG"/>
+                    <connections>
+                        <outlet property="ageField" destination="mPv-hK-RaB" id="mMB-we-fS2"/>
+                        <outlet property="modeControl" destination="dGD-nX-cNi" id="fOq-VB-aH5"/>
+                        <outlet property="nameField" destination="9Or-hA-6xK" id="tSZ-yW-4a7"/>
+                        <outlet property="resultLabel" destination="fGi-kR-a91" id="h4g-pk-5sR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,7 +167,6 @@
                     <navigationBar key="navigationBar" contentMode="top" largeTitles="YES" id="Rpt-Wv-LPX">
                         <rect key="frame" x="0.0" y="118" width="393" height="106"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
